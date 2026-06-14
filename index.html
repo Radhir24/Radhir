@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="K. Radhir - Premium Cyberpunk Frontend Developer Portfolio. Showcasing modern responsive web designs, interactive mini-apps, and technical expertise.">
-    <title>K. Radhir | Frontend Developer Portfolio</title>
+    <meta name="description" content="K. Radhir - Premium Cyberpunk Frontend Developer Portfolio Website. Features embedded functional live project applications.">
+    <title>K. Radhir | Portfolio Terminal</title>
+    <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
@@ -13,257 +14,197 @@
 </head>
 <body class="cyber-theme">
 
+    <!-- System Preloader -->
     <div id="preloader">
         <div class="loader-content">
-            <h2 class="cyber-glitch" data-text="INITIALIZING...">INITIALIZING...</h2>
-            <div class="loader-bar"><div class="loader-progress"></div></div>
-            <p class="loader-status">Loading Matrix Modules...</p>
+            <h2 class="cyber-glitch-text" data-text="BOOTING RADHIR.SYS...">BOOTING RADHIR.SYS...</h2>
+            <div class="loader-bar-wrap"><div class="loader-progress-line"></div></div>
+            <p class="loader-terminal-status">Loading visual matrix sub-routines...</p>
         </div>
     </div>
 
-    <canvas id="cyberCanvas"></canvas>
+    <!-- Matrix Background Overlay Canvas -->
+    <canvas id="matrixCanvas"></canvas>
 
-    <header class="cyber-header">
-        <div class="logo">
-            <a href="#hero">RADHIR<span>.SYS</span></a>
+    <!-- Top Navigation Header -->
+    <header class="cyber-navbar">
+        <div class="nav-logo">
+            <a href="#hero">RADHIR<span>.EXE</span></a>
         </div>
-        <nav class="nav-links">
-            <a href="#hero" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#interactive-labs">Labs</a>
-            <a href="#services">Services</a>
-            <a href="#education">Journey</a>
-            <a href="#contact">Contact</a>
+        <nav class="nav-menu">
+            <a href="#hero" class="menu-item active">Home</a>
+            <a href="#about" class="menu-item">About</a>
+            <a href="#projects" class="menu-item">Showcase</a>
+            <a href="#live-demos" class="menu-item">Live Demos</a>
+            <a href="#skills" class="menu-item">Skills</a>
+            <a href="#journey" class="menu-item">Evolution</a>
+            <a href="#contact" class="menu-item">Contact</a>
         </nav>
-        <div class="burger-menu" id="burgerMenu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div class="mobile-toggle" id="mobileToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </header>
 
     <main>
-        
-        <section id="hero" class="hero-section">
-            <div class="hero-container">
-                <div class="glitch-wrapper">
-                    <p class="hero-subtitle">// WELCOME TO THE FUTURE</p>
-                    <h1 class="hero-title">K. RADHIR</h1>
-                    <h2 class="hero-typing-text">I AM A <span id="typing-element"></span></h2>
-                </div>
-                <p class="hero-desc">Crafting high-fidelity, premium cyberpunk interfaces with pixel-perfect responsive execution. Bridging elite aesthetic concepts with flawless functional programming.</p>
-                <div class="hero-ctas">
-                    <a href="#contact" class="cyber-btn primary-btn">
-                        <span class="btn-text">HIRE ME</span>
-                        <span class="btn-glitch"></span>
+        <!-- Hero Terminal Section -->
+        <section id="hero" class="hero-terminal">
+            <div class="hero-wrapper">
+                <p class="terminal-tag">// INITIALIZING SECURE MAIN_LINK</p>
+                <h1 class="hero-main-name">K. Radhir</h1>
+                <h2 class="hero-dynamic-subtitle">SYSTEM STATE: <span id="typingEngine"></span></h2>
+                <p class="hero-synopsis">Crafting high-fidelity, premium user interfaces with clean zero-dependency structures. Bridging elite cyberpunk aesthetic concepts with stable production code.</p>
+                <div class="hero-action-row">
+                    <a href="#contact" class="terminal-btn btn-primary">
+                        <span class="txt">HIRE INTERFACE</span>
                     </a>
-                    <a href="#projects" class="cyber-btn secondary-btn">
-                        <span class="btn-text">VIEW PROJECTS</span>
-                        <span class="btn-glitch"></span>
+                    <a href="#live-demos" class="terminal-btn btn-secondary">
+                        <span class="txt">LAUNCH LIVE DEMOS</span>
                     </a>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <div class="mouse"></div>
-                <p>SCROLL DOWN</p>
+            <div class="terminal-scroll-alert">
+                <div class="scroller-icon"></div>
+                <span>SYSTEM_SCROLL</span>
             </div>
         </section>
 
-        <section id="about" class="about-section scroll-reveal">
-            <h2 class="section-title"><span class="cyber-tag">//</span> 01. ABOUT ME</h2>
-            <div class="about-grid">
-                <div class="about-card glass-card">
-                    <h3>SYSTEM OVERVIEW</h3>
-                    <p>I am a deeply passionate Frontend Developer specializing in structural mechanics, responsive architecture, and cutting-edge visual layouts. Operating between the tech ecosystems of Vijayawada and Chennai, I engineer digital platforms that balance extreme user-interface performance with heavy aesthetic weight.</p>
-                    <p>My core directive is transforming complex ideas into accessible, production-ready, clean-coded interfaces that mesmerize users and convert objectives seamlessly.</p>
-                    <div class="meta-info-grid">
-                        <div class="meta-item"><strong>BASE ENGINE:</strong> Vijayawada, AP</div>
-                        <div class="meta-item"><strong>DEPLOYED AT:</strong> Chennai, TN</div>
-                        <div class="meta-item"><strong>AVAILABILITY:</strong> Immediate Relocation / Remote</div>
+        <!-- About Creator Section -->
+        <section id="about" class="about-terminal viewport-reveal">
+            <h2 class="cyber-section-title"><span class="title-index">// 01.</span> THE CREATOR</h2>
+            <div class="about-container-layout">
+                <div class="profile-meta-card glass-card">
+                    <div class="avatar-icon-box">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3>K. Radhir</h3>
+                    <p class="sub-role-tag">Frontend System Architect</p>
+                    <div class="meta-stats-row">
+                        <div class="meta-stat-node">
+                            <h2>45+</h2>
+                            <p>PROJECT CORES</p>
+                        </div>
+                        <div class="meta-stat-node">
+                            <h2>100%</h2>
+                            <p>EFFICIENCY</p>
+                        </div>
+                        <div class="meta-stat-node">
+                            <h2>12+</h2>
+                            <p>MODULES</p>
+                        </div>
                     </div>
                 </div>
-                <div class="about-card glass-card objective-card">
-                    <h3>CAREER OBJECTIVE</h3>
-                    <p>To secure a high-impact Frontend Developer role within an elite development infrastructure, utilizing comprehensive expertise in modern UI architectures, precise viewport mapping, and logic-driven JavaScript programming to drive commercial-grade system aesthetics.</p>
-                    <div class="cyber-status-bar">
-                        <span class="status-dot online"></span> SYSTEM READY FOR PRODUCTION
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills-section scroll-reveal">
-            <h2 class="section-title"><span class="cyber-tag">//</span> 02. CORE STACK</h2>
-            <div class="skills-grid">
-                <div class="skill-group glass-card">
-                    <h3>FRONTEND CORES</h3>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>HTML5</span><span class="percentage">95%</span></div>
-                        <div class="skill-bar-container"><div class="skill-bar" data-progress="95%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>CSS3 / Animations</span><span class="percentage">92%</span></div>
-                        <div class="skill-bar-container"><div class="skill-bar" data-progress="92%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>JavaScript (ES6+)</span><span class="percentage">88%</span></div>
-                        <div class="skill-bar-container"><div class="skill-bar" data-progress="88%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Responsive Web Design</span><span class="percentage">95%</span></div>
-                        <div class="skill-bar-container"><div class="skill-bar" data-progress="95%"></div></div>
-                    </div>
-                </div>
-                <div class="skill-group glass-card">
-                    <h3>PROGRAMMING & LOGISTICS</h3>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Java</span><span class="percentage">80%</span></div>
-                        <div class="skill-bar-container"><div class="skill-bar" data-progress="80%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Python</span><span class="percentage">78%</span></div>
-                        <div class="skill-bar-container"><div class="skill-bar" data-progress="78%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Git & GitHub Control</span><span class="percentage">85%</span></div>
-                        <div class="skill-bar-container"><div class="skill-bar" data-progress="85%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Frontend Systems Architecture</span><span class="percentage">90%</span></div>
-                        <div class="skill-bar-container"><div class="skill-bar" data-progress="90%"></div></div>
+                <div class="about-narrative-card glass-card">
+                    <h3>CORE PROTOCOL OVERVIEW</h3>
+                    <p>Operating between the technical networks of Vijayawada and Chennai, I balance high-performance software aesthetics with lightweight executable logic patterns. I transform raw conceptual layouts into fluid structural frames with immediate visual feedback loops.</p>
+                    <p>My objective focuses on pushing optimization layers across modern viewports while sustaining highly interactive aesthetic configurations layout like shown in style architecture 34245.jpg reference design patterns.</p>
+                    <div class="location-spec-grid">
+                        <div class="spec-node"><strong>BASE REGION:</strong> Vijayawada, AP</div>
+                        <div class="spec-node"><strong>DEPLOYMENT HUB:</strong> Chennai, TN</div>
+                        <div class="spec-node"><strong>COMPILATION MODE:</strong> Production-Ready</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects-section scroll-reveal">
-            <h2 class="section-title"><span class="cyber-tag">//</span> 03. FEATURED WORK</h2>
-            <div class="projects-container">
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-showcase-terminal viewport-reveal">
+            <h2 class="cyber-section-title"><span class="title-index">// 02.</span> SELECTED INTERFACES</h2>
+            <div class="projects-matrix-grid">
                 
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <div class="project-fallback-img img-p1">AI CHAT INFRASTRUCTURE</div>
-                    </div>
-                    <div class="project-content">
+                <!-- Card 1 -->
+                <div class="project-matrix-card glass-card">
+                    <div class="p-card-header h-blue">AI CHAT ENGINE INTERFACE</div>
+                    <div class="p-card-body">
                         <h3>AI Chat Assistant</h3>
-                        <p class="project-desc">A premium artificial intelligence natural language interface styled with cyber-grid alignments and complete prompt delivery feedback metrics.</p>
-                        <div class="project-features">
-                            <span><i class="fa-solid fa-check"></i> Realtime Streaming UX</span>
-                            <span><i class="fa-solid fa-check"></i> Dynamic Layout Adaptability</span>
+                        <p>Modern terminal chatbot UI containing direct communication simulation logs and instant interface frame parsing.</p>
+                        <div class="p-card-tags">
+                            <span>HTML5</span><span>CSS3 Neon</span><span>Pure DOM JS</span>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3 Neon</span><span class="tech-tag">ES6 Script</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn git-btn"><i class="fa-brands fa-github"></i> Source</a>
-                            <a href="#lab-ai" class="project-btn demo-btn"><i class="fa-solid fa-bolt"></i> Live System</a>
+                        <div class="p-card-actions">
+                            <a href="#" class="action-btn-src"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#lab-ai" class="action-btn-live"><i class="fa-solid fa-bolt"></i> Live Module</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <div class="project-fallback-img img-p2">FINANCIAL TRACKER</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Expense Tracker Engine</h3>
-                        <p class="project-desc">Complete cryptographic and local storage ledger monitoring mathematical algorithms for income and expenditure balancing protocols.</p>
-                        <div class="project-features">
-                            <span><i class="fa-solid fa-check"></i> Mathematical State Array</span>
-                            <span><i class="fa-solid fa-check"></i> Persistent Cache System</span>
+                <!-- Card 2 -->
+                <div class="project-matrix-card glass-card">
+                    <div class="p-card-header h-pink">LEDGER METRICS ENGINE</div>
+                    <div class="p-card-body">
+                        <h3>Expense Tracker</h3>
+                        <p>Real-time financial status tracking matrix with calculation modules and persistent browser local states.</p>
+                        <div class="p-card-tags">
+                            <span>JS State Logic</span><span>CSS Flexbox</span><span>Data Array</span>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Logic JS</span><span class="tech-tag">Data Matrix</span><span class="tech-tag">CSS Grids</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn git-btn"><i class="fa-brands fa-github"></i> Source</a>
-                            <a href="#lab-expense" class="project-btn demo-btn"><i class="fa-solid fa-bolt"></i> Live System</a>
+                        <div class="p-card-actions">
+                            <a href="#" class="action-btn-src"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#lab-expense" class="action-btn-live"><i class="fa-solid fa-bolt"></i> Live Module</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <div class="project-fallback-img img-p3">WEATHER RADAR CONSOLE</div>
-                    </div>
-                    <div class="project-content">
+                <!-- Card 3 -->
+                <div class="project-matrix-card glass-card">
+                    <div class="p-card-header h-purple">GLOBAL ATMOSPHERE RADAR</div>
+                    <div class="p-card-body">
                         <h3>Weather Dashboard</h3>
-                        <p class="project-desc">Global atmospheric telemetry dashboard gathering instant weather variables via premium high-speed RESTful JSON queries.</p>
-                        <div class="project-features">
-                            <span><i class="fa-solid fa-check"></i> Async API Handshakes</span>
-                            <span><i class="fa-solid fa-check"></i> Micro-Icon Mapping</span>
+                        <p>Telemetry console monitoring regional weather coordinates via instant script-driven simulation nodes.</p>
+                        <div class="p-card-tags">
+                            <span>API Parsing</span><span>JSON Matrix</span><span>Fluid UI</span>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">REST API</span><span class="tech-tag">JSON Node</span><span class="tech-tag">Responsive UI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn git-btn"><i class="fa-brands fa-github"></i> Source</a>
-                            <a href="#lab-weather" class="project-btn demo-btn"><i class="fa-solid fa-bolt"></i> Live System</a>
+                        <div class="p-card-actions">
+                            <a href="#" class="action-btn-src"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#lab-weather" class="action-btn-live"><i class="fa-solid fa-bolt"></i> Live Module</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <div class="project-fallback-img img-p4">TASK LOGISTICS BOARD</div>
-                    </div>
-                    <div class="project-content">
+                <!-- Card 4 -->
+                <div class="project-matrix-card glass-card">
+                    <div class="p-card-header h-cyan">OBJECTIVE LIFECYCLE TRACKER</div>
+                    <div class="p-card-body">
                         <h3>Task Manager Matrix</h3>
-                        <p class="project-desc">Advanced data status manipulation framework including state persistence and dynamic CRUD execution lines for tasks.</p>
-                        <div class="project-features">
-                            <span><i class="fa-solid fa-check"></i> Real-time Lifecycle Hooks</span>
-                            <span><i class="fa-solid fa-check"></i> Status Filter Pipelines</span>
+                        <p>Advanced CRUD deployment interface allowing creation, execution statuses, and automated clearance pipelines.</p>
+                        <div class="p-card-tags">
+                            <span>DOM Lifecycle</span><span>Event Listeners</span><span>CSS Grid</span>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">JS DOM Engine</span><span class="tech-tag">HTML5 Data</span><span class="tech-tag">Flexbox</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn git-btn"><i class="fa-brands fa-github"></i> Source</a>
-                            <a href="#lab-todo" class="project-btn demo-btn"><i class="fa-solid fa-bolt"></i> Live System</a>
+                        <div class="p-card-actions">
+                            <a href="#" class="action-btn-src"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#lab-todo" class="action-btn-live"><i class="fa-solid fa-bolt"></i> Live Module</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <div class="project-fallback-img img-p5">E-COMMERCE MATRIX</div>
-                    </div>
-                    <div class="project-content">
+                <!-- Card 5 -->
+                <div class="project-matrix-card glass-card">
+                    <div class="p-card-header h-yellow">E-COMMERCE TRANSACTION HUB</div>
+                    <div class="p-card-body">
                         <h3>E-Commerce Web Portal</h3>
-                        <p class="project-desc">A highly luxurious commercial showcase display containing reactive localized memory cart item tracking and price aggregators.</p>
-                        <div class="project-features">
-                            <span><i class="fa-solid fa-check"></i> Live Multi-state Store</span>
-                            <span><i class="fa-solid fa-check"></i> Advanced Spatial Filtration</span>
+                        <p>Luxury modular shopping showcase platform with active localized store states and item counter aggregators.</p>
+                        <div class="p-card-tags">
+                            <span>Store Arrays</span><span>Data Structures</span><span>Responsive Layout</span>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vanilla Engine</span><span class="tech-tag">E-Store UI</span><span class="tech-tag">CSS Components</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn git-btn"><i class="fa-brands fa-github"></i> Source</a>
-                            <a href="#" class="project-btn demo-btn"><i class="fa-solid fa-bolt"></i> Live System</a>
+                        <div class="p-card-actions">
+                            <a href="#" class="action-btn-src"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#" class="action-btn-live"><i class="fa-solid fa-bolt"></i> Live Module</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <div class="project-fallback-img img-p6">PORTFOLIO PROTOCOL</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Portfolio Core Website</h3>
-                        <p class="project-desc">The structural presentation matrix itself. Programmed purely with accelerated hardware layers and optimized responsive viewports.</p>
-                        <div class="project-features">
-                            <span><i class="fa-solid fa-check"></i> Canvas Overlay Synthesis</span>
-                            <span><i class="fa-solid fa-check"></i> 0% Asset Overhead Loss</span>
+                <!-- Card 6 -->
+                <div class="project-matrix-card glass-card">
+                    <div class="p-card-header h-white">PORTFOLIO PROTOCOL CORE</div>
+                    <div class="p-card-body">
+                        <h3>Personal Branding Website</h3>
+                        <p>The layout frame structure itself, built entirely on optimized hardware-accelerated style elements.</p>
+                        <div class="p-card-tags">
+                            <span>Pure Vanilla JS</span><span>Responsive Canvas</span><span>CSS Variables</span>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5 Core</span><span class="tech-tag">Pure CSS3</span><span class="tech-tag">Vanilla JS Matrix</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn git-btn"><i class="fa-brands fa-github"></i> Source</a>
-                            <a href="#hero" class="project-btn demo-btn"><i class="fa-solid fa-bolt"></i> Live System</a>
+                        <div class="p-card-actions">
+                            <a href="#" class="action-btn-src"><i class="fa-brands fa-github"></i> Repository</a>
+                            <a href="#hero" class="action-btn-live"><i class="fa-solid fa-bolt"></i> Live Module</a>
                         </div>
                     </div>
                 </div>
@@ -271,52 +212,129 @@
             </div>
         </section>
 
-        <section id="interactive-labs" class="labs-section scroll-reveal">
-            <h2 class="section-title"><span class="cyber-tag">//</span> 04. EMBEDDED FUNCTIONAL LABS</h2>
-            <p class="section-subtitle">Interact directly with real working code modules built from scratch below.</p>
+        <!-- Compulsory Live Functional Demos Section -->
+        <section id="live-demos" class="live-demos-terminal viewport-reveal">
+            <h2 class="cyber-section-title"><span class="title-index">// 03.</span> COMPULSORY MODULE LIVE DEMOS</h2>
+            <p class="section-log-desc">Execute and verify structural functionality inside these live application blocks.</p>
             
-            <div class="labs-grid">
+            <div class="demos-control-grid">
                 
-                <div class="lab-card glass-card" id="lab-calc">
-                    <div class="lab-header"><span></span><span></span><span></span>  CALCULATOR_CORE.EXE</div>
-                    <div class="calculator-app">
-                        <input type="text" id="calcDisplay" readonly value="0">
-                        <div class="calc-buttons">
-                            <button class="calc-btn system-clear" onclick="clearCalc()">C</button>
-                            <button class="calc-btn" onclick="inputCalc('/')">/</button>
-                            <button class="calc-btn" onclick="inputCalc('*')">*</button>
-                            <button class="calc-btn" onclick="inputCalc('-')">-</button>
-                            <button class="calc-btn" onclick="inputCalc('7')">7</button>
-                            <button class="calc-btn" onclick="inputCalc('8')">8</button>
-                            <button class="calc-btn" onclick="inputCalc('9')">9</button>
-                            <button class="calc-btn" onclick="inputCalc('+')">+</button>
-                            <button class="calc-btn" onclick="inputCalc('4')">4</button>
-                            <button class="calc-btn" onclick="inputCalc('5')">5</button>
-                            <button class="calc-btn" onclick="inputCalc('6')">6</button>
-                            <button class="calc-btn operation-equal" onclick="calculateResult()">=</button>
-                            <button class="calc-btn" onclick="inputCalc('1')">1</button>
-                            <button class="calc-btn" onclick="inputCalc('2')">2</button>
-                            <button class="calc-btn" onclick="inputCalc('3')">3</button>
-                            <button class="calc-btn double-width" onclick="inputCalc('0')">0</button>
-                            <button class="calc-btn" onclick="inputCalc('.')">.</button>
+                <!-- Demo 1: Working Calculator -->
+                <div class="interactive-demo-box glass-card" id="lab-calc">
+                    <div class="box-top-terminal">
+                        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+                        <div class="term-title">CALCULATOR_CORE.EXE</div>
+                    </div>
+                    <div class="calculator-wrapper">
+                        <input type="text" id="calcDisplayOutput" readonly value="0">
+                        <div class="calc-keys-layout">
+                            <button class="key k-clear" onclick="clearCalculator()">C</button>
+                            <button class="key" onclick="appendCalcValue('/')">/</button>
+                            <button class="key" onclick="appendCalcValue('*')">*</button>
+                            <button class="key" onclick="appendCalcValue('-')">-</button>
+                            <button class="key" onclick="appendCalcValue('7')">7</button>
+                            <button class="key" onclick="appendCalcValue('8')">8</button>
+                            <button class="key" onclick="appendCalcValue('9')">9</button>
+                            <button class="key" onclick="appendCalcValue('+')">+</button>
+                            <button class="key" onclick="appendCalcValue('4')">4</button>
+                            <button class="key" onclick="appendCalcValue('5')">5</button>
+                            <button class="key" onclick="appendCalcValue('6')">6</button>
+                            <button class="key k-equal" onclick="processCalculatorOutput()">=</button>
+                            <button class="key" onclick="appendCalcValue('1')">1</button>
+                            <button class="key" onclick="appendCalcValue('2')">2</button>
+                            <button class="key" onclick="appendCalcValue('3')">3</button>
+                            <button class="key k-double" onclick="appendCalcValue('0')">0</button>
+                            <button class="key" onclick="appendCalcValue('.')">.</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="lab-card glass-card" id="lab-todo">
-                    <div class="lab-header"><span></span><span></span><span></span>  TASK_MATRIX.SYS</div>
-                    <div class="todo-app">
-                        <div class="input-row">
-                            <input type="text" id="todoInput" placeholder="Enter target objective...">
-                            <button onclick="addTodoItem()"><i class="fa-solid fa-plus"></i></button>
+                <!-- Demo 2: Working To-Do App -->
+                <div class="interactive-demo-box glass-card" id="lab-todo">
+                    <div class="box-top-terminal">
+                        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+                        <div class="term-title">TASK_MATRIX_CORE.SYS</div>
+                    </div>
+                    <div class="todo-wrapper">
+                        <div class="todo-control-row">
+                            <input type="text" id="todoInputField" placeholder="Target objective entry...">
+                            <button onclick="executeNewTodoItem()"><i class="fa-solid fa-plus"></i></button>
                         </div>
-                        <ul id="todoList" class="todo-item-container"></ul>
+                        <ul id="todoListElement" class="todo-render-list"></ul>
                     </div>
                 </div>
 
-                <div class="lab-card glass-card" id="lab-expense">
-                    <div class="lab-header"><span></span><span></span><span></span>  LEDGER_TRACKER.BAT</div>
-                    <div class="expense-app">
-                        <div class="balance-container">
-                            <h4>NET BALANCE</h4>
-            
+                <!-- Demo 3: Working Expense Tracker -->
+                <div class="interactive-demo-box glass-card" id="lab-expense">
+                    <div class="box-top-terminal">
+                        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+                        <div class="term-title">LEDGER_TRACKER_RUN.BAT</div>
+                    </div>
+                    <div class="expense-wrapper">
+                        <div class="balance-display-node">
+                            <span class="lbl">TOTAL SYSTEM BALANCE</span>
+                            <h2 id="netBalanceVal">₹0.00</h2>
+                        </div>
+                        <div class="expense-inputs-node">
+                            <input type="text" id="expenseLabel" placeholder="Transaction Label Description">
+                            <input type="number" id="expenseValue" placeholder="Numerical Value (Positive / Negative)">
+                            <button onclick="commitTransactionItem()">LOG TRANSACTION</button>
+                        </div>
+                        <ul id="ledgerLogElement" class="ledger-render-log"></ul>
+                    </div>
+                </div>
+
+                <!-- Demo 4: Working Weather App UI -->
+                <div class="interactive-demo-box glass-card" id="lab-weather">
+                    <div class="box-top-terminal">
+                        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+                        <div class="term-title">WEATHER_RADAR_MONITOR.LOG</div>
+                    </div>
+                    <div class="weather-wrapper">
+                        <div class="weather-control-row">
+                            <input type="text" id="weatherTargetNode" placeholder="Target Station Node (e.g. Chennai, Vijayawada)..." value="Chennai">
+                            <button onclick="fetchSimulatedWeatherState()"><i class="fa-solid fa-satellite-dish"></i></button>
+                        </div>
+                        <div class="weather-telemetry-box">
+                            <h3 id="wCity">CHENNAI, IN</h3>
+                            <div class="w-flex">
+                                <i class="fa-solid fa-cloud-bolt" id="wConditionIcon"></i>
+                                <h1 id="wTemp">32°C</h1>
+                            </div>
+                            <p id="wDesc">ATMOSPHERE: HIGH HUMIDITY THUNDERSTORMS</p>
+                            <div class="w-sub-metrics">
+                                <div><i class="fa-solid fa-wind"></i> Wind: <span id="wWind">14 km/h</span></div>
+                                <div><i class="fa-solid fa-droplet"></i> Humidity: <span id="wHum">82%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Demo 5: Working AI Chat UI -->
+                <div class="interactive-demo-box glass-card" id="lab-ai">
+                    <div class="box-top-terminal">
+                        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+                        <div class="term-title">CORE_INTELLIGENCE_ROUTINE.NET</div>
+                    </div>
+                    <div class="ai-wrapper">
+                        <div class="ai-logs-terminal-viewport" id="aiLogsViewport">
+                            <div class="msg-block system"><span class="pfx">SYSTEM:</span> Terminal ready. Awaiting parameters packet.</div>
+                        </div>
+                        <div class="ai-controls-input-row">
+                            <input type="text" id="aiMainframeInput" placeholder="Query mainframe terminal nodes...">
+                            <button onclick="processAiTerminalMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-terminal viewport-reveal">
+            <h2 class="cyber-section-title"><span class="title-index">// 04.</span> CAPABILITIES VECTOR</h2>
+            <div class="services-matrix-layout">
+                <div class="service-vector-card glass-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Building highly scalable client-side infrastructure architecture using functional scri
