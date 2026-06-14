@@ -1,15 +1,8 @@
 // --- SYSTEM INTERFACE BOOTSTREAM ---
 window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        const preloader = document.getElementById('preloader');
-        if (preloader) {
-            preloader.style.opacity = '0';
-            preloader.style.visibility = 'hidden';
-        }
-        executeMatrixBackgroundSystem();
-        initiateTypingMainframe();
-        engageViewportTracking();
-    }, 1200);
+    executeMatrixBackgroundSystem();
+    initiateTypingMainframe();
+    engageViewportTracking();
 });
 
 // --- DIGITAL ENVIRONMENT MATRIX LINER ---
@@ -230,4 +223,3 @@ function dispatchContactPayload(e) {
         document.getElementById('terminalSecureForm').reset();
     }
 }
-
