@@ -40,28 +40,6 @@ body.cyber-theme {
     opacity: 0.12;
 }
 
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-dark-mainframe);
-    z-index: 99999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.4s ease, visibility 0.4s ease;
-}
-
-.loader-content { text-align: center; width: 300px; }
-.cyber-glitch-text { font-family: var(--font-heading); color: var(--neon-cyan); font-size: 1.2rem; text-shadow: 0 0 8px var(--neon-cyan); margin-bottom: 15px;}
-.loader-bar-wrap { width: 100%; height: 3px; background: rgba(255,255,255,0.05); position: relative; overflow: hidden; }
-.loader-progress-line { width: 0%; height: 100%; background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan)); animation: forceLoad 1.5s forwards; }
-.loader-terminal-status { font-size: 0.85rem; color: var(--text-muted); margin-top: 10px; }
-
-@keyframes forceLoad { 100% { width: 100%; } }
-
 /* --- NAVIGATION TERMINAL --- */
 .cyber-navbar {
     position: fixed;
@@ -241,5 +219,5 @@ section { padding: 80px 6%; }
     .trajectory-node { width: 100%; padding-left: 35px; text-align: left !important; }
     .trajectory-node::after { left: 10px; }
     .right-trajectory { left: 0; }
-}
-
+                                             }
+               
